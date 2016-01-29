@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yzq.katl.dao.RiddleMapper">
+	<resultMap id="BaseResultMapResult" type="com.yzq.katl.model.Riddle">
+		<id property="id" column="ID"/>
+		<result property="question" column="Question"/>
+		<result property="answer" column="Answer"/>
+		<result property="clickTimes" column="ClickTimes"/>
+		<result property="status" column="Status"/>
+		<result property="sort" column="Sort"/>
+		<result property="isDeleted" column="IsDeleted"/>
+		<result property="createTime" column="CreateTime"/>
+		<result property="updateTime" column="UpdateTime"/>
+	</resultMap>
+	
+	<!-- 查询最新的谜语 -->
+	<select id="selectNewRiddleList" resultMap="BaseResultMapResult">
+		SELECT r.* FROM `riddle` AS r
+		ORDER BY r.CreateTime DESC LIMIT 0,8;
+	</select>
+	
+	<!-- 查询最新的谜语 -->
+	<select id="selectTopClickRiddleList" resultMap="BaseResultMapResult">
+		SELECT r.* FROM `riddle` AS r
+		ORDER BY r.ClickTimes DESC LIMIT 0,10;
+	</select>
+	
+	<!-- 添加点击次数 -->
+	<update id="updateRiddleClickTimes">
+		UPDATE riddle SET ClickTimes=ClickTimes+1 WHERE ID= #{id}
+	</update>
+	
+	<select id="selectRiddleListTotalCount" resultType="int">
+		SELECT  count(*) FROM  `riddle` AS r
+	</select>
+	<select id="selectRiddleList" resultMap="BaseResultMapResult">
+		SELECT r.* FROM `riddle` AS r
+		ORDER BY r.CreateTime DESC
+		LIMIT #{page.start},#{page.pageSize} 
+	</select>
+	
+</mapper>

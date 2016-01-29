@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yzq.katl.dao.EssayMapper">
+	<resultMap id="BaseResultMapResult" type="com.yzq.katl.model.Essay">
+		<id property="id" column="ID"/>
+		<result property="type" column="Type"/>
+		<result property="title" column="Title"/>
+		<result property="description" column="Description"/>
+		<result property="seoId" column="SEOID"/>
+		<result property="logoUrl" column="LogoUrl"/>
+		<result property="clickTimes" column="ClickTimes"/>
+		<result property="contentId" column="ContentID"/>
+		<result property="isHot" column="IsHot"/>
+		<result property="isRecommend" column="IsRecommend"/>
+		<result property="isTop" column="IsTop"/>
+		<result property="status" column="Status"/>
+		<result property="sort" column="Sort"/>
+		<result property="isDeleted" column="IsDeleted"/>
+		<result property="createTime" column="CreateTime"/>
+		<result property="updateTime" column="UpdateTime"/>
+	</resultMap>
+	
+	<resultMap id="BaseResultExtendResult" type="com.yzq.katl.dto.EssayDTO" extends="BaseResultMapResult">
+		<result property="htmlText" column="HtmlText"/>
+	</resultMap>
+	
+	<!-- 查询最新的短文 -->
+	<select id="selectNewEssayList" resultMap="BaseResultExtendResult">
+		SELECT e.*,c.HtmlText FROM essay AS e LEFT JOIN content AS c ON e.ContentID = c.ID  
+		ORDER BY e.CreateTime DESC LIMIT 0,6;
+	</select>
+	
+	<!-- 统计点击排行 -->
+	<select id="selectTopClickEssayList" resultMap="BaseResultExtendResult">
+		SELECT e.*,c.HtmlText FROM `essay` AS e LEFT JOIN content AS c ON e.ContentID = c.ID 
+		ORDER BY e.ClickTimes DESC LIMIT 0,10;
+	</select>
+	
+	<!-- 随机抽取数据 -->
+	<select id="selectRandomEssayList" resultMap="BaseResultExtendResult">
+		SELECT e.*,c.HtmlText FROM `essay` AS e LEFT JOIN content AS c ON e.ContentID = c.ID 
+		ORDER BY rand() DESC LIMIT 0,4;
+	</select>
+	
+	<!-- 添加点击次数 -->
+	<update id="updateEssayClickTimes">
+		UPDATE essay SET ClickTimes=ClickTimes+1 WHERE ID= #{id}
+	</update>
+	
+	<select id="selectEssayById" resultMap="BaseResultExtendResult">
+		SELECT e.*,c.HtmlText FROM essay AS e LEFT JOIN content AS c ON e.ContentID = c.ID  
+		WHERE e.ID = #{id}
+	</select>
+	
+	<select id="selectNextEssayById" resultMap="BaseResultExtendResult">
+		<![CDATA[
+			SELECT e.* FROM `essay` AS e WHERE e.ID > #{id} ORDER BY e.ID ASC LIMIT 0,1
+		]]>
+	</select>
+	
+	<select id="selectPreEssayById" resultMap="BaseResultExtendResult">
+		<![CDATA[
+			SELECT e.* FROM `essay` AS e WHERE e.ID < #{id} order by e.ID DESC LIMIT 0,1
+		]]>
+	</select>
+	
+	<select id="selectEssayListTotalCount" resultType="int">
+		SELECT  count(*) FROM  `essay` AS e
+		<where>
+			<if test="type != 0">
+				e.Type = #{type}
+			</if>
+		</where>
+	</select>
+	<select id="selectEssayList" resultMap="BaseResultExtendResult">
+		SELECT e.*,c.HtmlText FROM essay AS e LEFT JOIN content AS c ON e.ContentID = c.ID
+		<where>
+			<if test="type != 0">
+				e.Type = #{type}
+			</if>
+		</where>
+		ORDER BY e.CreateTime DESC
+		LIMIT #{page.start},#{page.pageSize} 
+	</select>
+	
+</mapper>

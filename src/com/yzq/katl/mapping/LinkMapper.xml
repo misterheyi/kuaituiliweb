@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yzq.katl.dao.LinkMapper">
+	
+	<resultMap id="BaseResultMapResult" type="com.yzq.katl.model.Link">
+		<id property="id" column="ID"/>
+		<result property="title" column="Title"/>
+		<result property="targetUrl" column="TargetUrl"/>
+		<result property="sort" column="Sort"/>
+		<result property="isDeleted" column="IsDeleted"/>
+		<result property="createTime" column="CreateTime"/>
+		<result property="updateTime" column="UpdateTime"/>
+	</resultMap>
+	
+	<select id="selectShowLinkList" resultMap="BaseResultMapResult">
+		SELECT l.* FROM `link` AS l ORDER BY l.Sort DESC
+	</select>
+	
+</mapper>

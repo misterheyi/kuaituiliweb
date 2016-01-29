@@ -1,0 +1,437 @@
+/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
+body{font: 14px/1.5 '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;color:#333 ;} 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,img { padding: 0; margin: 0; }
+address,caption,cite,code,dfn,em,th,var,i { font-weight:normal; font-style:normal; }
+ul,ol,li{list-style: none;}
+
+img {border: none;vertical-align: middle; -ms-interpolation-mode: bicubic;}
+
+a{color:#555;text-decoration:none; outline:none;}
+a:hover {color:#d03b21; text-decoration:none; }
+.fleft{float:left}
+.fright{float:right}
+.mt10{margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+/* 头部 布局*/
+.header{ background: url(../images/3312.jpg) no-repeat; background-size: 100% 100%;}
+.header_main{ width:1100px; height:100px; margin:0 auto; }
+.header .logo{ width:370px; height:64px; float:left; margin-top:22px;}
+.header ul{ float:right; height:40px; padding:50px 0px 10px; }
+.header ul li{ width:80px; height:35px; background-color:#d03b21; line-height:35px; text-align:center; margin-left:10px; float:left}
+.header ul li a{ display:block; font-size:15px; font-weight:600; color:#fff;  }
+.header ul .select_nav,.header ul li:hover{ background-color:#333;}
+
+/* 内容部分 布局*/
+.mainContent{  background: #eee url(../images/bg.jpg) no-repeat; background-size: 100% 100%; padding:10px 0; height:100% ; min-width:1100px; }
+.main{ width:1100px; height:auto; margin:0 auto; padding-top:10px; background: url(../images/bg_in111.png) ; padding:10px;}
+.main >p{ margin-bottom:10px; margin-top:-10px; color: #fff;}
+.main >p >a{  color: #fff;}
+
+/* Tab切换 */
+ 
+.index_tab .hd{ height:33px; line-height:33px;  font-size:16px; }
+.index_tab .hd ul{ overflow:hidden; zoom:1;  }
+.index_tab .hd ul li{ float:left; padding-right:20px; }
+.index_tab .hd ul li a{ display:block; padding:0 30px; border-bottom: solid 2px #eee;  }
+.index_tab .hd ul li a:hover{ text-decoration:none;  }
+.index_tab .hd ul li.on a{ border-bottom: solid 2px red; }
+.index_tab .bd li{ height:32px; line-height:32px; border-bottom:dashed #eee 1px;   }
+
+
+.index_tab{padding:10px; width:671px; height:345px;  float:left;background-color:#fff;}
+.index_intro{padding:30px; width:338px; height:305px;  float:right; background-color:#fff;}
+.index_intro img{ width:338px; height:260px;}
+.index_intro  h1{ margin-top:15px; font-weight:600; font-size:20px; text-align:center;}
+
+
+/* 图片链接 */
+.link_img{  }
+.link_img img{padding:10px 0px; width:1100px;}
+
+.tip{ padding:4px 8px; color:#fff; display:inline-block; background-color:#d03b21; font-size:12px; margin-right:20px;}
+ 
+ 
+/* 精彩短文 */
+.th_2{ padding:10px; width:1080px; height:392px;  float:left; margin-top:10px;background-color:#fff;}
+.th_2 >p{ border-bottom:solid 1px #ddd; padding-bottom:10px;font-size:16px; color:#43080a; font-weight:600;}
+.th_2 >p i{ float:right;}
+.short_list li { width:519px; float:left; padding:10px ; height:100px;}
+.short_list li:hover{ background-color:#eee;}
+.short_list li .img_a img{float: left;width: 160px;height: 100px; margin-right: 10px;}
+.short_list li h3 {float: left;width: 349px;height: 20px;line-height: 20px;font-size: 14px;font-weight: bold;cursor: pointer;color: #d03b21;overflow: hidden;}
+.short_list li .infotxt {float: left;width: 349px;line-height: 18px;overflow: hidden; padding:5px 0px; text-indent:2em;}
+.short_list li .readmore {float: left;width: 349px;height: 20px;line-height: 20px;color: #999;text-align: right;overflow: hidden;}
+
+
+/* 经典小说 */
+.novel{  padding:10px; width:1080px; height:477px;  float:left; margin-top:10px;background-color:#fff;}
+.novel >p{ border-bottom:solid 1px #ddd; padding-bottom:10px;font-size:16px; color:#43080a; font-weight:600;}
+.novel >p i{ float:right;}
+.novel li { width:174px; float:left; padding:10px ; height:403px;  margin:10px; border:solid 1px #aaa}
+.novel li:hover{border:solid 1px #d03b21;  }
+.novel li:hover h3{ background-color:#d03b21}
+.novel li .img_a img{width:174px;height: 235px; margin-right: 10px;}
+.novel li h3 { text-align:center;width: 174px;height: 30px;line-height: 30px;font-size: 14px;font-weight: bold;cursor: pointer;color: #fff; background-color:#2B2828;}
+.novel li .infotxt { text-indent:2em;float: left;width: 174px;height: 100px;line-height: 18px;overflow: hidden; padding:10px 0px;}
+.novel li .readmore {float: left;width: 174px;height: 20px;line-height: 20px;color: #999;text-align: right;overflow: hidden;}
+
+
+
+/* 3个窗口 */
+.tab_3{padding:10px; width:340px; height:400px;  float:left; background-color:#fff;margin-top:10px; margin-right:10px;}
+.tab_3 >p{  padding:14px;font-size:16px; color:#43080a; font-weight:600; background-color:#7fcff4; height:28px;}
+.tab_3 >p i{ float:right; margin-right:5px; color:#fff; height:28px; line-height:28px;}
+.tab_3 >p i a{ color:#fff; }
+
+
+/* li 列表 通用 */
+.news_list { padding:10px 10px ; display:block}
+.news_list li{ height:40px; line-height:40px; list-style-type:square; overflow: hidden;text-overflow: ellipsis;white-space: nowrap; border-bottom:dashed 1px #eee;  }
+.news_list li:hover{ color: #D31515;}
+.news_list li a{background:  url("../images/dot.png") no-repeat scroll left center;padding-left: 15px; display:inline-block}
+.news_list li a h3{ font-weight:normal; font-size:14px;}
+.news_list li a:hover{ background: url("../images/dot2.png") no-repeat scroll left center; }
+.news_list li i{ float:right; font-size:12px;}
+
+
+
+/* 推理名家 -- 推理电影 css */
+.scrollBox{ width:1078px;  background:#fff; ;padding:10px;border-top:1px solid #fff; position:relative; margin-top:10px; float:left;}
+.scrollBox >p{ border-bottom:solid 1px #ddd; padding-bottom:10px;font-size:16px; color:#43080a; font-weight:600;}
+.scrollBox >p i{ float:right;}
+.scrollBox .piclist{ overflow:hidden; zoom:1;}
+.scrollBox .ohbox{overflow:hidden; position:relative;width:960px;left:60px; margin-top:10px;}
+.scrollBox {position:relative;overflow:hidden;zoom:1;}
+.scrollBox .piclist li{float:left; display:inline; width:140px;background:#fff;border:1px solid #c9bea9;margin-right:10px;padding:4.5px; height:210px}
+.scrollBox .piclist li:hover{border:1px solid #d03b21;}
+.scrollBox .piclist li:hover h3{background-color:#d03b21}
+.scrollBox .piclist li h3{height:25px;line-height:25px;display:block;text-align:center; font-size:14px; background-color:#2B2828; color:#fff; margin-top:5px }
+.scrollBox .piclist li img{ width:140px; height:180px;}
+.scrollBox .pageBtn span{  display:block;width:37px;height:100px;position:absolute;top:110px;cursor:pointer;text-indent:-999em;overflow:hidden; }
+.scrollBox .pageBtn .prev{left:15px;background:url(../images/hou.png) no-repeat;}
+.scrollBox .pageBtn .next{right:15px;background:url(../images/qian.png) no-repeat}
+.scrollBox .pageBtn .list{overflow:hidden;zoom:1;margin:10px 0 0 499px; }
+.scrollBox .pageBtn .list li{ background: url(../images/slider-btn.png) 0 -10px no-repeat; float:left; display:inline; width:15px;height:8px;cursor:pointer;margin-left:10px;line-height:10000px;overflow:hidden;  }
+.scrollBox .pageBtn .list li.on{background-position:0 0;}
+
+
+.book_left .peplist{margin: 0px ;}
+.book_left .peplist li{float:left; display:inline; width:150px;background:#fff;border:1px solid #c9bea9;margin-right:10px;padding:4.5px; height:230px}
+.book_left .peplist li:hover{border:1px solid #d03b21;}
+.book_left .peplist li:hover h3{background-color:#d03b21}
+.book_left .peplist li h3{height:25px;line-height:25px;display:block;text-align:center; font-size:14px; background-color:#2B2828; color:#fff; margin-top:5px }
+.book_left .peplist li img{ width:150px; height:200px;}
+
+
+
+/* 相关人物 */
+.bt_gg{  padding:10px; width:1080px; height:325px;  float:left; margin-top:10px;background-color:#fff;height:230px;}
+.hisCelebrity{height:100px; overflow:hidden}
+.hisCelebrity h4 {padding:8px ;width: 15px;background: #d03b21;line-height: 20px;height: 100%;color: #fff;margin-right: 2px;display:inline-block;float:left}
+.hisCelebrity p {height: 93px;padding: 10px 20px;width: 915px;background: #eee;display:inline-block;float:left}
+.hisCelebrity p i{ display:inline-block;  padding:3px 10px;}
+.hisCelebrity h5 {padding:0px 8px ;width: 74px;background: #ddd;line-height: 100px;height: 100%;color: #fff;margin-right: 2px;display:inline-block;float:left; text-align:center; font-size:16px; font-weight:normal;}
+
+
+
+/* 首页 footer */
+.footer{ background:#fff;padding:20px 0; text-align:left; width:100%;float:left;background-color:#ddd; min-width:1100px;  border-top:1px solid #ddd; }
+.footer .footer_wrap{width:1100px;margin:auto; }
+.footer .footer_wrap p{ text-align:center}
+.footer .footer_wrap p a{ display:inline-table; width:100px;}
+
+
+
+
+.classify .c_left{ padding:20px; width:710px;  float:left;  background-color:#fff; min-height:1000px;}
+.info_list li{height: 120px; border-bottom: 2px solid #f8f8f8; position: relative; margin-top:15px;}
+.info_list li:hover{ background-color:#eee;}
+.info_list img{width:135px; height:100px;}
+.info_cont{width: 78%; float: left; line-height: 28px; margin-left: 20px;}
+.info_list li > a{display:inline-block; float:left;}
+.info_title{font-size:18px; overflow: hidden; text-overflow: ellipsis;}
+.info_pro{height: 50px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; word-break:normal; font-size: 14px; color: #999;}
+.info_date{float: right; bottom: 0px; right: 25px; position: absolute;}
+
+.classify .c_right{padding:20px; width:300px;  float:right;;background-color:#fff;}
+
+
+/* 热门文章 */
+.hot_article{width:300px;  }
+.hot_article h1{position:relative; border-bottom:solid 1px #ddd;font-size: 16px;color: #d03b21; padding-bottom:7px;}
+.con_tuju{ margin-top:5px;}
+.con_tuju  li {line-height: 35px;height: 35px; width:300px;text-overflow: ellipsis;white-space: nowrap; }
+.con_tuju  li span {line-height: 23px;display: block;float: left;text-align: center;margin-top: 6px;}
+.con_tuju  li .bj {background: #d03b21;color: #fff;width: 23px;height: 23px;}
+.con_tuju  li .bj1 {border: 1px solid #e5e5e5;width: 22px;height: 22px;background: #fff;}
+.con_tuju  li a h3{line-height: 35px;height: 35px;float: left;margin-left: 12px; width:264px;text-overflow: ellipsis;white-space: nowrap; overflow: hidden; font-weight:normal; font-size:14px; }
+.con_tuju  li a h3 i{ float:right; font-size:12px;}
+
+
+/* 热门文章  图文 */
+.hot_pic{ margin-top:10px; }
+.hot_pic h1{position:relative; border-bottom:solid 1px #ddd;font-size: 16px;color: #d03b21; padding-bottom:7px;}
+.hot_pic_list{ }
+.hot_pic_list li{ width:140px; display:inline-table; float:left; margin-left:7px;padding:10px 0px}
+.hot_pic_list img{  height:90px; width:140px;}
+.hot_pic_list p{ text-align:center; height:30px; line-height:28px; background-color:#333; color:#fff;width:140px;  overflow: hidden;text-overflow: ellipsis;white-space: nowrap;  }
+.hot_pic_list li:hover p{background-color:#d03b21; }
+
+
+
+
+/* 文章内容 */
+.article_cont{ }
+.article_cont h1{ font-size: 20px;color: #d03b21; text-align:center;  border-bottom:solid 1px #ddd;  line-height:45px;} 
+.article_cont p{ text-indent:2em; padding:10px 0px; line-height:28px;}
+
+
+/* 阅读相关 */
+.read_link{padding:10px; width:1080px; height:280px; border:solid 1px #ddd; float:left; margin-top:10px; background-color:#fff; }
+.read_link  h1{ font-size: 16px;color: #d03b21;   border-bottom:solid 1px #ddd; padding-bottom:10px;}
+.read_link .info_list{ width:100%; margin-top:10px;}
+.read_link .info_list li{ float:left;width:49%; margin-right:10px;}
+.read_link .info_list .info_cont { width:68%}
+
+
+/* 列表页文章列表 */
+.art_list li { width:690px; float:left; padding:10px ; height:100px;border-bottom: solid 1px #eee;}
+.art_list li:hover{ background-color:#eee;}
+.art_list li .img_a img{float: left;width: 160px;height: 100px; margin-right: 10px;}
+.art_list li h3 {float: left;width: 520px;height: 20px;line-height: 20px;font-size: 14px;font-weight: bold;cursor: pointer;color: #d03b21;overflow: hidden;}
+.art_list li .infotxt {float: left;width: 520px;line-height: 18px;overflow: hidden; padding:10px 0px; text-indent:2em;}
+.art_list li .readmore {float: left;width: 520px;height: 20px;line-height: 20px;color: #999;text-align: right;overflow: hidden;}
+
+
+/*短文分类*/
+.dw_fl{ width:100%; height:50px; margin-top:20px; border-bottom:solid #eee 1px;}
+.dw_fl ul{ display:inline-block;}
+.dw_fl ul li{ float:left; width:100px; text-align:center; }
+.dw_fl ul li a{ color:#555; display:block; margin-right:3px;}
+.dw_fl ul li a:hover{ background-color:#E07461; color:#fff;}
+.dw_fl ul li .select{ background-color:#E07461; color:#fff; }
+
+/* 小说列表 */
+.book_left{ padding:20px; float:left; width:756px; background:#fff;min-height: 1167px;}
+.book_left > h1{font-size: 16px;color: #d03b21;   border-bottom:solid 1px #ddd; padding-bottom:10px; }
+.book_left  .books_list{width:100%; overflow:hidden}
+.book_left  ul{width:810px; margin:0px 0 0 -20px}
+.book_left  li{float:left; display:inline; width:140px; height:247px; margin:20px 0 0 16px; position:relative}
+.book_left  li .pic{display:inline-block; width:140px; height:198px; position:relative}
+.book_left  li .pic img{width:140px; height:198px}
+.book_left  li .pic .bg{display:inline-block; width:100%; height:24px; background:#000; opacity:0.7; -moz-opacity:0.7; filter:alpha(opacity=70); position:absolute; left:0; bottom:0; z-index:19}
+.book_left  li .pic .text{display:inline-block; width:100%; height:24px; line-height:24px; color:#FFF; text-align:center; position:absolute; left:0; bottom:0; z-index:20; overflow:hidden}
+.book_left  li .graybg{height:40px; padding:3px 0; margin-top:3px; background:#ebebeb}
+.book_left  li .graybg p{height:20px; line-height:20px; text-align:center; overflow:hidden}
+.book_left  li .graybg p span, .book_left  li .graybg .time{color:#666}
+.book_left  li .introbg{width:100%; height:247px; background:#000; opacity:0; -moz-opacity:0; filter:alpha(opacity=0); position:absolute; left:0; top:0; z-index:21; display:none}
+.book_left  li .introlink{width:120px; height:227px; padding:10px; position:absolute; left:0; top:0; z-index:22; color:#FFF; cursor:pointer; display:none}
+.book_left  li .introlink .intro{display:block; height:180px; line-height:20px; text-indent:2em; overflow:hidden}
+.book_left  li .introlink .readbtn{display:block; height:24px; line-height:24px; margin-top:15px; text-align:center; background:#d03b21; color:#FFF}
+
+/* 小说列表 -- 右侧列表 */
+.books_right{ padding:20px; float:right; background:#fff; width:254px; }
+.books_right  h1{ font-size: 16px;color: #d03b21;   border-bottom:solid 1px #ddd; padding-bottom:10px;}
+.books_123{ margin-top:5px; }
+.books_123 li {line-height: 35px;height: 35px; width:250px;text-overflow: ellipsis;white-space: nowrap; }
+.books_123 li span {line-height: 23px;display: block;float: left;text-align: center;margin-top: 6px;}
+.books_123 li .bj {background: #d03b21;color: #fff;width: 23px;height: 23px;}
+.books_123 li .bj1 {border: 1px solid #e5e5e5;width: 22px;height: 22px;background: #fff;}
+.books_123  li a h3{line-height: 35px;height: 35px;float: left;margin-left: 12px; width:210px;text-overflow: ellipsis;white-space: nowrap; overflow: hidden; font-weight:normal; font-size:14px; }
+.books_123  li a h3 i{ float:right; font-size:12px;}
+
+
+
+
+.ui-icon{display:inline-block;background:url(../images/ui-icon.gif) no-repeat;_background:url(../images/ui-icon.gif) no-repeat;overflow:hidden}
+
+/* 小说介绍页  */
+.bookcover-hd{height:50px; padding-left:60px; position:relative}
+.bookcover-hd .st-icon, .chapter-hd .st-icon{width:50px; height:50px; position:absolute; left:0; top:0}
+.bookcover-hd .serial-icon, .chapter-hd .serial-icon{background-position:-83px -67px} /* 连载中 ico*/
+.bookcover-hd .end-icon, .chapter-hd .end-icon{background-position:-83px -122px}
+.bookcover-hd .booktitle{width:500px; height:50px}
+.bookcover-hd .booktitle .name{height:25px}
+.bookcover-hd .booktitle .name h1{display:inline-block; zoom:1; *display:inline; font:22px/25px Microsoft YaHei}
+.bookcover-hd .booktitle .name .vip-icon{width:31px; height:15px; background-position:-83px -47px; margin-left:5px}
+.bookcover-hd .booktitle p{height:20px; line-height:20px; margin-top:5px}
+.bookcover-hd .booktitle p em{padding:0 5px; color:#999}
+
+.bookcover-bd .bookcover-l{width:260px}
+.bookcover-bd .bookcover-r{width:495px}
+.bookcover-bd .bigpic{height:312px}
+.bookcover-bd .bigpic img{width:220px; height:312px}
+.bookcover-bd .vote{margin-top:15px}
+.bookcover-bd .vote .zhui .num{display:inline-block; width:100px; height:35px; text-align:center; font:28px/35px Georgia; color:#b90000; overflow:hidden}
+.bookcover-bd .vote .zhui .text{display:inline-block; width:100px; height:30px; line-height:30px; text-align:center; font-size:14px; color:#666}
+.bookcover-bd .vote .zhui{float:left; width:78%; text-align:center}
+.bookcover-bd .bookbtn-box{height:45px; margin:10px 0 25px 0; text-align:right}
+.bookcover-bd .bookbtn-box .bookbtn-bd{display:inline-block; zoom:1; *display:inline}
+.bookcover-bd .bookstate{height:48px; line-height:24px; padding:10px; background:#efe9e2; color:#a59d94}
+
+.bookbtn-box .catalogbtn, .bookcover-bd .bookbtn-box .readingbtn{margin-left:15px}
+.bookbtn-box a{float:left; width:123px; height:43px; line-height:43px; text-align:left; font-size:14px; position:relative; overflow:hidden}
+.bookbtn-box a i{position:absolute}
+.bookbtn-box .catalogbtn{background:#f5f5f5; border:1px solid #e6e6e6}
+
+.bookbtn-box .zhuibookbtn i{width:16px; height:21px; background-position:-26px -78px; left:35px; top:11px}
+.bookbtn-box .catalogbtn{text-indent:50px}
+.bookbtn-box .catalogbtn i{width:21px; height:21px; background-position:-52px -42px; left:19px; top:11px}
+.bookbtn-box .readingbtn{background:#d03b21; border:1px solid #d03b21;color: #FFF;text-indent:47px}
+.bookbtn-box .readingbtn i{width:19px; height:21px; background-position:-52px -68px; left:19px; top:11px}
+
+
+
+/* 最新章节试阅 */
+.latestchapter .hd{height:35px; padding-left:50px; background:#efe9e2; color:#a59d94; font:18px/35px Microsoft YaHei; position:relative}
+.latestchapter .hd i{width:17px; height:23px; background-position:-52px -136px; position:absolute; left:20px; top:6px}
+.latestchapter .latestchapter-con{padding:0 40px 0 20px; margin-top:15px; position:relative}
+.latestchapter .latestchapter-con .title{height:30px; line-height:30px}
+.latestchapter .latestchapter-con .title h3{float:left; max-width:480px; font-size:14px; overflow:hidden}
+.latestchapter .latestchapter-con .title .vip-icon{float:left; width:14px; height:12px; background-position:-26px -104px; margin:9px 0 0 5px}
+.latestchapter .latestchapter-con .title .time{float:right;width: 125px;text-align: right;}
+.latestchapter .latestchapter-con .intro{max-height:72px; line-height:24px; text-indent:2em; color:#666; overflow:hidden}
+.latestchapter .latestchapter-con .goread{width:19px; height:37px; background-position:-52px -94px; position:absolute; right:0; _right:19px; top:40px}
+
+
+
+/* 作者相关 */
+.aboutauthor{height:80px; padding-bottom:20px; margin-top:15px; border-bottom:1px dashed #d7d7d7}
+.aboutauthor .avatar{float:left; width:80px; height:80px; margin-right:10px}
+.aboutauthor p{float:left; width:100px; height:25px; line-height:25px; overflow:hidden}
+.aboutauthor p.authorname{margin-top:2px}
+.aboutauthor p.authorname a{font-weight:bold; color:#d2a15d}
+.authorotherbook{width:100%; margin-top:10px; overflow:hidden}
+.authorotherbook h3{height:20px; line-height:20px; font-weight:normal; color:#666}
+.authorotherbook ul{width:280px; margin-left:-12px}
+.authorotherbook ul li{float:left; display:inline; width:255px; margin:12px 0 0 12px}
+.authorotherbook ul li a{display:inline-block; width:55px; height:78px}
+.authorotherbook ul li a img{width:55px; height:78px}
+.authorotherbook p{ border-bottom:1px dashed #d7d7d7;padding:5px 0px;}
+.authorotherbook p span{ padding:0px 10px;}
+
+/* 小说介绍页 的 底下 小说列表 */
+.book_left_bottom ul{ margin:0 0 0 -20px; width:1060px;}
+.book_left_bottom li{ margin: 20px 0 0 36px; }
+
+
+
+
+
+
+.readset{height:40px; margin:20px 0 30px}
+.readset .readset-l, .readset .readset-r{height:20px; line-height:20px; background:#acb4a3}
+.readset .readset-l{float:left; width:750px; padding:10px 20px}
+.readset .readset-r{float:right; width:80px; padding:10px 20px; text-align:center}
+.readset .fontset{float:left}
+.readset .fontset li{float:left; display:inline;}
+.readset .fontset li.ml{margin-left:20px}
+.readset .fontset li a{color:#61675b}
+.readset .fontset li a:hover, .readset .fontset li a.current{color:#4f320c}
+.readset .fontset li a.ml{margin-left:12px}
+.readset .fontset li a.default{color:#333}
+.readset .interaction{float:right}
+.readset .interaction li{float:left; display:inline; margin-left:15px}
+.readset .interaction li a{color:#4f320c}
+.readset .lookcatalog{font-weight:bold; color:#4f320c}
+
+
+
+.article-title{text-align:center; font:26px/35px Microsoft YaHei}
+.article-infos{height:25px; line-height:25px; margin-top:10px; text-align:center; color:#666}
+.article-infos em{padding:0 8px}
+.article-con{width:840px; min-height:600px; margin:20px auto; line-height:28px; font-size:16px}
+.article-con p{text-indent:2em; padding:8px 0}
+.authorsay{width:800px; margin:0 auto; padding:20px; line-height:26px; background:#acb4a3; font-size:14px; color:#61675b}
+.authorsay .authorname{color:#4f320c; font-weight:bold}
+.articlebtn{height:30px; margin-top:30px; text-align:center}
+.articlebtn a{display:inline-block; width:65px; height:30px; line-height:30px; margin:0 10px; text-align:center; font-size:14px; font-weight:bold; background:#666; color:#FFF}
+.articlebtn a:hover{color:#FFF}
+.articletips{padding:0 0 20px; margin-top:20px; text-align:center; color:#666}
+
+
+
+
+
+
+
+/** 谜语列表 **/
+.module dl{margin:10px;font-size: 14px;position: relative;overflow: hidden;zoom: 1;}
+.module dt{line-height: 24px;padding:10px 12px;color:#333;font-size:14px;}
+.module dd{position: relative;bottom: -1px;height:24px;line-height: 24px;padding:0 12px 11px;border-bottom: 1px solid #E8E8E8;}
+.module .trigger-show{display: inline-block;height:25px;line-height: 25px;padding:0 8px;background-color: #d03b21;color:#FFF;cursor: pointer;}
+.module dd p{display: none;background-color:#F5F5F5;}
+.module .answer-hd{display: inline-block;height:25px;line-height: 25px;padding:0 12px 0 8px;background: url("../images/triangle.png") 0 0 no-repeat;color:#FFF;cursor: pointer;}
+.module .answer{margin-left: 15px;color:#666;}
+
+
+
+
+
+/* 搜索 */
+.seach_all{font-size: 16px;color: #d03b21;   border-bottom:solid 1px #ddd; padding-bottom:10px; height:60px}
+.seach_all img{ padding-bottom:10px; width:60px; display:inline-table; float:left}
+.seach_all input{width:200px; display:inline-table; float:left; margin-left:20px; margin-top:20px; padding:5px;}
+.seach_all button{ width:50px; display:inline-table; float:left; margin-left:10px; background-color: #d03b21; margin-top:20px; padding:7px; border:0px; color:#fff; cursor:pointer;}
+.seach_all p{width:370px; display:inline-table; float:left; margin-left:20px;margin-top:20px;  padding:5px;}
+.seach_all p a{ padding:0px 5px; font-weight:normal; font-size:14px;}
+
+
+
+
+/* 更多 导航 */
+.more{ height:114px; margin-top:0px; width:1130px;}
+.wangchao {height: 70px;overflow: hidden;}
+.wangchao h4 {padding: 15px 8px;width: 15px;background: #d03b21;line-height: 20px;height: 100%;color: #fff;margin-right: 2px;display: inline-block;float: left;}
+.wangchao p {height: 50px;padding: 10px 20px;width: 1056px;background: #eee;display: inline-block;float: left;}
+.wangchao p i {display: inline-block;width: 60px;padding: 3px 0px;}
+
+.index_search{height: 50px;float: left;margin-top: -404px;width: 895px;background-color: #fff;padding: 0px 10px;}
+
+
+/* 漫画章节列表 */
+.manhua_list{padding:0 20px 0 20px; margin-top:20px; position:relative}
+.manhua_list ul li{width: 235px;font-size: 14px; height:35px; line-height:35px;margin: 5px 20px 0 0; list-style-position: outside;list-style-type: none;float: left;border-bottom: #d7e4ea 1px dotted;}
+.manhua_list ul li a{background:  url("../images/dot.png") no-repeat scroll left center;padding-left: 15px; display:inline-block}
+.manhua_list ul li a:hover{ background: url("../images/dot2.png") no-repeat scroll left center; }
+
+
+/* 关于我们 */
+.about { height: 300px;  margin-bottom:30px;}
+.about img{ width:300px; height:300px;}
+.about .about_p{ width:700px; padding:30px; }
+.about .about_p > h2{ font-size:22px; padding-bottom:30px;}
+.about .about_p  p{ margin-bottom:20px;}
+
+
+
+/* 分页 样式 start*/
+.main_bearing_page{background: none repeat scroll 0 0 #fff;margin: auto;padding-bottom: 24px;width: 100%; text-align:center;}
+.paging_list{display: inline-block;height: 28px;margin-top: 30px;width: auto;}
+.paging_list span{margin: 0;}
+.paging_list span{cursor: default;float: left;margin: 0 3px;text-align: center;}
+.page-syy{background-position: center center;background-repeat: no-repeat;color: #ffffff;font-size: 0;}
+.paging_list span a.p{border: 1px solid #c2c2c2;border-radius: 5px;color: #c2c2c2;display: block;font-size: 14px;height: 24px;line-height: 25px;margin: 0;overflow: hidden;padding-left: 0;text-align: center;width: 70px;}
+a:link, a:visited{text-decoration: none;}
+.paging_list .page_current{background-color: #d03b21;border-radius: 5px;color: #fff;display: block;font-size: 14px;height: 27px;line-height: 26px;margin-left: 5px;margin-top: -1px;overflow: hidden;padding-left: 0;text-align: center;width: 26px;}
+.paging_list span a.num{border: 1px solid #c2c2c2;border-radius: 5px;color: #c2c2c2;display: block;font-size: 14px;height: 24px;line-height: 25px;margin: 0;overflow: hidden;padding-left: 0;text-align: center;width: 24px;}
+.paging_list p a.p:hover{background-color: #d03b21;border-radius: 5px;color: #fff;display: block;font-size: 14px;height: 24px;line-height: 25px;margin: 0;overflow: hidden;padding-left: 0;text-align: center;width: 24px;}
+.paging_list a.num:hover{background-color: #d03b21;border-radius: 5px;color: #fff;display: block;font-size: 14px;height: 24px;line-height: 25px;margin: 0;overflow: hidden;padding-left: 0;text-align: center;width: 24px;}
+.paging_list .ellipsis{color: #c2c2c2;font-size: 18px;}
+.page-xyy{background-position: center center;background-repeat: no-repeat;font-size: 0;}
+.main_bearing_page p{font-size: 12px;line-height: 34px;text-align: center;}
+/* 分页 样式 end*/
+
+
+
+.detal_page{width:98%; margin:30px auto; height:150px;}
+.detal_page h5{line-height:50px; font-size:14px; font-weight:normal; }
+.detal_page .next{ width:49%; height:50px; line-height:50px; background-color:#ddd; display:inline-table; float:left; text-align:center; font-size:16px;}
+.detal_page .next:hover{ background-color:#d03b21;color: #fff;}
+.bnt{width:100%; margin:auto; text-align:center; margin:20px auto;}
